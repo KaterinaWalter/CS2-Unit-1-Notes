@@ -106,5 +106,23 @@ public class Main {
       int nearestPositive = (int) (positiveNum + 0.5);
       int nearestNegative = (int) (negativeNum - 0.5); 
 
+      // COMPOUND OPERATORS (shortcuts)
+      int runs = 0; 
+      // Re-assign variable to existing value plus 1
+      runs = runs + 1; 
+      runs += 1; // operator first, then result assigned back
+      System.out.println("Runs: " + runs);
+      // Even shorter shortcut for adding/subtracting ONE!
+      runs++;
+      runs--; // same as runs = runs - 1;
+
+      // More examples of shortcuts
+      runs = runs * 2; // runs is now 4
+      runs *= 3; // runs is now 12
+      System.out.println("Runs is now " + runs);
+      runs *= -10; 
+      runs /= 10; // dividing current value by 10
+      runs %= 7; // remainder of runs/7
+      
    }
 }
